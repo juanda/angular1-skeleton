@@ -43,11 +43,11 @@ Una vez construida la imagen podemos crear nuevos contenedores con:
 
 Y se puede acceder a la aplicación en
 
-# http://localhost:9000
+    # http://localhost:9000
 
 O si usamos vagrant:
 
-# http://192.168.33.10:9000
+    # http://192.168.33.10:9000
 
 
 Si queremos desarrollar es fundamental montar en el contenedor el volumen del host, para que al hacer cambios en el código el contenedor los vea:
