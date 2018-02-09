@@ -52,11 +52,11 @@ O si usamos vagrant:
 
 Si queremos desarrollar es fundamental montar en el contenedor el volumen del host, para que al hacer cambios en el código el contenedor los vea:
 
-# docker run -d \
--p 9000:9000 \
---name angular1app \
---mount type=bind,source="$(pwd)",target=/app \
-<username>/angular1-skeleton
+    # docker run -d \
+    -p 9000:9000 \
+    --name angular1app \
+    --mount type=bind,source="$(pwd)",target=/app \
+    <username>/angular1-skeleton
 
 Una vez que tenemos creado el contenedor para desarrollo con esta última instrucción, podemos pararlo:
 
